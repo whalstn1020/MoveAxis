@@ -1,0 +1,62 @@
+﻿<Window x:Class="MoveAxis.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MoveAxis"
+        mc:Ignorable="d"
+        Title="Home Search" Height="300" Width="300">
+    <Grid>
+        <GroupBox  Margin="2" Grid.ColumnSpan="2" Grid.Row="1" Background="LightGray">
+            <GroupBox.Header>
+                <Label Name="MoveFunction" Content="Move Function" FontSize="10" HorizontalAlignment="Left" VerticalAlignment="Top" />
+            </GroupBox.Header>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="3*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+
+                </Grid.RowDefinitions>
+               
+                <Label Name="FirstVel" Content="First Velocity" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <TextBox x:Name="FVVal" Text="0" Grid.Row="0" TextWrapping="NoWrap" HorizontalAlignment="Left"   VerticalAlignment="Center" HorizontalContentAlignment="Right" Grid.Column="1" Width="120"  />
+
+                <Label Name="SecondVel" Content="Second Velocity"  Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <TextBox x:Name="SVVal" Text="0" Grid.Row="1" TextWrapping="NoWrap" HorizontalAlignment="Left"   VerticalAlignment="Center" HorizontalContentAlignment="Right" Grid.Column="1" Width="120" />
+
+                <Label Name="ThirdVel" Content="Third Velocity" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <TextBox x:Name="TVVal" Text="0" Grid.Row="2" TextWrapping="NoWrap" HorizontalAlignment="Left"   VerticalAlignment="Center" HorizontalContentAlignment="Right" Grid.Column="1" Width="120" />
+
+                <Label Name="LastVel" Content="Third Velocity" Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <TextBox x:Name="LVVal" Text="0" Grid.Row="3" TextWrapping="NoWrap" HorizontalAlignment="Left"   VerticalAlignment="Center" HorizontalContentAlignment="Right" Grid.Column="1" Width="120" />
+
+                <Label Name="FirstAcc" Content="First Accel" Grid.Row="4" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <TextBox x:Name="FAcc" Text="0" Grid.Row="4" TextWrapping="NoWrap" HorizontalAlignment="Left"   VerticalAlignment="Center" HorizontalContentAlignment="Right"    Grid.Column="1" Width="120" />
+
+                <Label Name="SecondAcc" Content="Second Accel" Grid.Row="5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <TextBox x:Name="SAcc" Text="0" Grid.Row="5" TextWrapping="NoWrap" HorizontalAlignment="Left"   VerticalAlignment="Center" HorizontalContentAlignment="Right" Grid.Column="1"  Width="120" />
+
+                <Button Name="HomeSearch" Content="Search Start" Grid.ColumnSpan="2" Grid.Row="6" HorizontalAlignment="Center" VerticalAlignment="Center" Width="70" Click="HomeSearch_Click" Margin="94,6,102,7"/>
+                <Button Name="MoveStop" Content="Move Stop" Grid.Row="6" HorizontalAlignment="Center" VerticalAlignment="Center" Width="70" Click="HomeSearch_Click" Grid.Column="1" Margin="73,6,13,7"/>
+
+
+
+            </Grid>
+
+
+
+
+
+        </GroupBox>
+
+    </Grid>
+</Window>
